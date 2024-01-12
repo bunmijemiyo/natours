@@ -9,9 +9,8 @@ const handleCastErrorDB = (err) => {
 const handleDuplicateFieldsDB = (err) => {
   // const value = err.path;
   const value = err.message.match(/(["'])(\\?.)*?\1/);
-  console.log('Handle Duplicate Errors1');
-  console.log(value);
-  console.log('Handle Duplicate Errors2');
+
+  // console.log(value);
   const message = `Duplicate fields value, ${value} Please use another value`;
   return new AppError(message, 400);
 };
@@ -102,19 +101,10 @@ module.exports = (err, req, res, next) => {
   if (process.env.NODE_ENV === 'development') {
     sendErrorDev(err, req, res);
   } else if (process.env.NODE_ENV === 'production') {
-    console.log('production Environment...');
+    // console.log('production Environment...');
     // eslint-disable-next-line prefer-const, node/no-unsupported-features/es-syntax
     let error = { ...err };
     error.message = err.message;
-    // console.log('Error up');
-    // console.log(typeof err);
-    // console.log(Object.keys(err).length);
-    // const keys = Object.keys(err);
-    // console.log(keys[0], 'oo', keys[1], keys[2], keys[3]);
-    // console.log(Object.keys(err)[0]);
-
-    // console.log(err);
-    // console.log('Error down');
 
     const { CastError } = mongoose;
     // if (err instanceof CastError) console.log('I catch you');

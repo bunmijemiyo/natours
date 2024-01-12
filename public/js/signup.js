@@ -4,12 +4,12 @@ import { showAlert } from './alerts';
 
 console.log('Fine...Login');
 export const signup = async (name, email, password, confirmPassword) => {
-  console.log(name, email, password, confirmPassword);
-  console.log('Finest...');
+  // console.log(name, email, password, confirmPassword);
+  // console.log('Finest...');
   try {
     const res = await axios({
       method: 'POST',
-      url: 'http://127.0.0.1:3000/api/v1/users/signup',
+      url: '/api/v1/users/signup',
       data: {
         name,
         email,
@@ -17,7 +17,7 @@ export const signup = async (name, email, password, confirmPassword) => {
         confirmPassword,
       },
     });
-    console.log(res.data);
+    // console.log(res.data);
     window.location.href = '/Login'; // Redirect to login page immediately
 
     if (res.data.status === 'success') {
@@ -34,4 +34,3 @@ export const signup = async (name, email, password, confirmPassword) => {
     showAlert('error', err.response.data.message);
   }
 };
-console.log('Done...Login');
