@@ -1,0 +1,111 @@
+http://localhost:3000/api/v1/users/signup
+
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTU4Y2ZmYjY1NDNlZmZhZWEwOTM2NyIsImlhdCI6MTY5NTkxMTE2NywiZXhwIjoxNzAzNjg3MTY3fQ.5zxgzM3J1jYxKuUhpyGgkM4cog4FFG_dXXSVLqsvw4o
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+    "passwordChangedAt": "2023-08-08"
+}
+
+{
+    "name": "jonas",
+    "email": "hello@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+    "role": "admin"
+}
+
+signup
+{
+    "email": "hello@jonas.com",
+    "fullname": "jonas",
+    "username": "admin"
+    "password": "pass1234",
+    "confirmPassword": "pass1234",
+}
+
+{
+    
+    "email": "hello@jonas.com",
+    "password": "pass1234"
+    
+}
+
+{
+    "name": "jonas",
+    "email": "hi@jonas.com",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Y2I4YjBkYmNlMjU1M2NjOGJhNDAyMyIsImlhdCI6MTY5MTQxNzMzMSwiZXhwIjoxNjk5MTkzMzMxfQ._6aJz0s3enLF86qJX__pKfWw_eMAN9XBPXKLPDXBOgY
+
+femi token
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWQ3NGI2Yjg5ZGY4MTM1NGM3ZTYzYSIsImlhdCI6MTY5NjQ5Mjc4NiwiZXhwIjoxNzA0MjY4Nzg2fQ.X7Jka44EVutcNc1Kan9lovmS6oIpT3Its9uswqJK6uA
+
+
+{
+    "email": "layo@gmail.com",
+    "name": "omolayo",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+
+{
+"passwordCurrent": "pass1234",
+"password": "password12345",
+"confirmPassword": "pass12345"
+}
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjRmN2YxNzQ1NDNhOGY4MjczYjdmYSIsImlhdCI6MTY5NjkyMTU4NSwiZXhwIjoxNzA0Njk3NTg1fQ.bAW6Ev3y6qj-w53Kc8exeGQS8uPSw2glSB3WDJlIgCA
+
+{
+    "email": "tayo@gmail.com",
+    "name": "omotayo",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+
+{
+    "email": "bayo@gmail.com",
+    "name": "omobayo",
+    "password": "pass1234",
+    "confirmPassword": "pass1234"
+}
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUwNDJjMjViYTc3MzVkNThlNTJlYyIsImlhdCI6MTY5NjkyNDcxNywiZXhwIjoxNzA0NzAwNzE3fQ.3yOwkBS3YCbKmsgmjUueXeHe33qhwdndEFIfBtcMBWU
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUwNDJjMjViYTc3MzVkNThlNTJlYyIsImlhdCI6MTY5NjkyNTI0MiwiZXhwIjoxNzA0NzAxMjQyfQ.uGZIsC4Cp5lADJmqSC-xzvP6C7nW8RGhEgWodHvEipE
+
+{
+"passwordCurrent": "pass1234",
+"password": "pass12345",
+"confirmPassword": "pass12345"
+}
+
+
+// cyber attack
+{
+   
+    "email": {"$gt": ""},
+    "password": "pass1234"
+}
+
+loading data from file
+node .\dev-data\data\import-dev-data.js --import
+
+script(src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js')
+    link(href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet')
+
+npm run start
+npm run watch:js  
+
+
+"watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url",
+    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
