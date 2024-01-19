@@ -89,11 +89,11 @@ if (userPasswordForm)
 if (bookBtn) {
   // console.log('Got it...');
   bookBtn.addEventListener('click', (e) => {
-    e.target.textContent = 'Processing....';
+    e.target.textContent = 'Processing...';
     const { tourId } = e.target.dataset;
     bookTour(tourId);
   });
 }
 
 const alertMessage = document.querySelector('body').dataset.alert;
-if (alert) showAlert('success', alertMessage, 20);
+if (alertMessage) showAlert('success', alertMessage, 20);
