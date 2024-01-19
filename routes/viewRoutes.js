@@ -38,6 +38,8 @@ router.use((req, res, next) => {
   next();
 });
 
+router.use(viewController.alerts);
+
 router.get('/', authController.isLoggedIn, viewController.getOverview);
 
 router.get('/tour/:slug', authController.isLoggedIn, viewController.getTour);

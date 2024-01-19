@@ -1,5 +1,6 @@
 /* eslint-disable */
 import '@babel/polyfill';
+import { showAlert } from './alerts';
 
 // import { displayMap } from './mapbox';
 import { login, logout } from './login';
@@ -93,3 +94,6 @@ if (bookBtn) {
     bookTour(tourId);
   });
 }
+
+const alertMessage = document.querySelector('body').dataset.alert;
+if (alert) showAlert('success', alertMessage, 20);
